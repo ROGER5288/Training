@@ -1,0 +1,16 @@
+package Operators.Conditionaloperator;
+
+public class Program1 {
+	public static void main(String[] args) {
+		//operand1(boolean)?operand2:operand3
+		System.out.println(true?10:20);
+		System.out.println(false?"A":65);
+		System.out.println(10>'A'?true:false);
+		System.out.println("Hello" != "hello"?'A':'B');
+		System.out.println(40>30?'A':'B');
+		//String res = 40>30?'A':true --->not possible as true is boolean and can't be converted to string.
+		//boolean res = 40>30?'A':true --->not possible as 'A' is string and can't be converted to boolean.		
+		String res = 40>30?"A":"true";
+		System.out.println(res);
+	}
+}

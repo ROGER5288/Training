@@ -1,0 +1,16 @@
+package Operators.Logicaloperator;
+
+public class Program2 {
+	public static void main(String[] args) {
+
+		
+		System.out.println(false || true || false);
+		System.out.println();
+
+		System.out.println();
+
+		System.out.println();
+
+		
+	}
+}

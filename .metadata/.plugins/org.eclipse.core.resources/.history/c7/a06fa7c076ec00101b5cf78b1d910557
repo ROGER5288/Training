@@ -1,0 +1,11 @@
+package Programs_on_variables;
+
+public class Program8 {
+	
+	short s=65;//
+	
+	char c = 65;
+	System.out.println();
+	
+	
+}

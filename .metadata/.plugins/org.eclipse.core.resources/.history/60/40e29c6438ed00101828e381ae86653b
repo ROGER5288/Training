@@ -1,0 +1,10 @@
+package FlowControlStatement.LoopingStatement;
+
+public class Program1 {
+	public static void main(String[] args) {
+		while(true) {
+			System.out.println("Hello");
+			break;
+		}
+	}
+}

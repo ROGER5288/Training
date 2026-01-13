@@ -1,0 +1,12 @@
+package Programs_on_variables;
+
+public class Program4 {
+	public static void main(String[] args) {
+		byte b = 20;
+		byte b1 = b;
+		//int a = 10;
+		//double d
+		System.out.println(b1);
+		
+	}
+}

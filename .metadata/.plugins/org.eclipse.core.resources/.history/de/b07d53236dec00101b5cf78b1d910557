@@ -1,0 +1,12 @@
+package Programs_on_variables;
+
+public class Program3 {
+	// global variable in class block not mandatory to assign the values 
+	public static void main(String[] args) {
+		// local variable
+		int a=10;
+		System.out.println(a);
+		a= 20;
+		System.out.println(a);
+	}
+}

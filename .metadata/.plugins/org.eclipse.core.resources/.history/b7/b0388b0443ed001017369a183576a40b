@@ -1,0 +1,17 @@
+package FlowControlStatement.LoopingStatement;
+
+public class Program5 {
+	public static void main(String[] args) {
+		int num = 5;
+		int s = num * num;
+		int l = num;
+		while(l/10 != 0 ) {
+			if( l%10 == s%10) {
+				System.out.println("Automorphic Number");
+			}else {
+				System.out.println("Not an Automorphic Number");
+			}
+		}
+		
+	}
+}

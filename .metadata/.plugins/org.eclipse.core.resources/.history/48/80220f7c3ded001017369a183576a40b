@@ -1,0 +1,19 @@
+package FlowControlStatement.LoopingStatement;
+
+public class Program4 {
+	public static void main(String[]args) {
+		//int num = 9;
+		int num =10;
+		int sum = 0;
+		int s = num * num;
+		while(s!=0) {
+			sum = s%10 + sum;
+			s/=10;
+		}
+		if(sum==num) {
+			System.out.println("it's a neon number");
+		}else {
+			System.out.println("it's not a neon number");
+		}
+	}
+}

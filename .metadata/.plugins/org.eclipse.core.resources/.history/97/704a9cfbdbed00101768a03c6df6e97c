@@ -1,0 +1,21 @@
+package FlowControlStatement.LoopingStatement;
+
+public class ASSIGNMENT1 {
+	public static void main(String[] args) {
+		//convert into binary 
+		int num =10;
+		String sum = "";
+		int i = 0;
+		while (num!=0) {
+			int a = num%2;
+			sum = a+ sum;
+			num/=2;
+			i++;
+		}
+		System.out.println(sum);
+		for(int j = i-1; j>=0; j--) {
+			System.out.println( sum + j);
+		}
+	}
+
+}

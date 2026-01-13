@@ -1,0 +1,14 @@
+package literals_data;
+
+public class Program3 {
+		public static void main(String[] args) {
+			//Literals Sting --> Group of characters
+			System.out.println("123ABC@#$");
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			
+		}
+}

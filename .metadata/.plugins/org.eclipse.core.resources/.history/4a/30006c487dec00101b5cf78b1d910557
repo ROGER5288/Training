@@ -1,0 +1,25 @@
+package Operators.Arithmeticoperators;
+
+public class Program1 {
+	public static void main(String[] args) {
+		
+		//addition
+		//normal, concatenation
+		
+		int a = 10;
+		int b = 30;
+		
+		
+		System.out.println(10 + 20);
+		System.out.println( a + b);
+		
+		//Concatenation is marging the string 
+		System.out.println(""+10+10);//1010
+		System.out.println(10+20+"Hello"+100);//30Hello100
+		
+		System.out.println(10*30/2);
+
+		System.out.println(10/30*2);
+		
+	}
+}

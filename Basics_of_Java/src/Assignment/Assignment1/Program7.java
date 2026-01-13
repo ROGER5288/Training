@@ -1,0 +1,32 @@
+package Assignment.Assignment1;
+
+public class Program7 {
+	public static void main(String[] args) {
+        int num=153;
+        //int num=121;
+        int temp1 = num;
+        int temp2 = num;
+        int d = 0;
+        while(temp1>0){
+            temp1/=10;
+            d++;
+        }
+        int sum = 0;
+        while(temp2 > 0){
+            int digit = temp2%10;
+            int p = 1;
+            int i = 0;
+            while(i<d){
+                p *= digit;
+                i++;
+            }
+            sum += p;
+            temp2 /=10;
+        }
+        if(sum == num){
+            System.out.println("Armstrong");
+        }else{
+            System.out.println("Not");
+        }
+    }
+}
