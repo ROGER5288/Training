@@ -1,0 +1,10 @@
+package Array;
+
+public class Employee {
+	int id;
+	String name;
+	double salary;
+	Employee(int id,String name, double salary){
+		
+	}
+}

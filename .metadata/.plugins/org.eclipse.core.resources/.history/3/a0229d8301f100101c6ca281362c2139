@@ -1,0 +1,12 @@
+package OOP.Fundamentals.Non_StaticInitializer;
+
+public class Program1{
+	
+	int a;
+	public static void main(String[]args) {
+		System.out.println(new Program1());
+		//.Program1@5ca881b5
+		System.out.println(new Program1());
+	}
+}
+

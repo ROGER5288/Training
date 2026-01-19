@@ -1,0 +1,18 @@
+package Array;
+
+public class Program1 {
+	static int[] i;
+	static int []j;
+	static int k[];
+	public static void main(String[]args) {
+		/*
+		 * array reference variable:
+		 * int []i;
+		 * int[] i;
+		 * int i[];
+		 */
+		System.out.println(i);
+		System.out.println(j);
+		System.out.println(k);
+	}
+}

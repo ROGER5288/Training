@@ -1,0 +1,15 @@
+package Methods;
+
+public class Program6 {
+	//Method Overloading --> In a class multiple method with same name but different formal arguments/operations
+	public static void main(String[] args) {
+		System.out.println(num(10,20));
+		System.out.println(num(10,20,30));
+	}
+	public static int num(int a, int b) {
+		return a+b;
+	}
+	public static int num(int a, int b, int c) {
+		return a+b+c;
+	}
+}

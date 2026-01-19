@@ -1,0 +1,27 @@
+package Association.Aggregation;
+
+public class Reader {
+	public static void main(String[] args) {
+	     
+		Library library=new Library();
+		library.setAddress("Kolkata");
+		library.setLocation("Newtown");
+		library.setName("Tony Stark");
+		library.setPinCode("700161");
+		System.out.println(library.getName());
+		System.out.println(library.getAddress());
+		System.out.println(library.getLocation());
+	    System.out.println(library.getPinCode());
+
+		System.out.println("Library "+library.getBook());
+	     
+		library.applyBook("1","Harry Potter","J.K. Rowling", "7669.00");
+		
+		System.out.println("Library "+library.getBook());
+		
+		System.out.println(library.getBook().getId());
+		System.out.println(library.getBook().getAuthor());
+		System.out.println(library.getBook().getTitle());
+		System.out.println(library.getBook().getPrice());
+	}
+}

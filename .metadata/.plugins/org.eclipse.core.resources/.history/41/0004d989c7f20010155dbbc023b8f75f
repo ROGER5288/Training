@@ -1,0 +1,25 @@
+package Relation.Association;
+
+public class Car {
+	
+	//new Car
+	private String brand;//null
+	private double price;//0.0
+	
+	private Engine engine;//null
+	
+	Car(){
+		engine = new Engine();
+	}
+	
+	
+	public String getBrand() {
+		return brand;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public Engine getEngine() {
+		return engine;
+	}
+}

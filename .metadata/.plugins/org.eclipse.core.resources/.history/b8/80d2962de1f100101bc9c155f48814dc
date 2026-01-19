@@ -1,0 +1,13 @@
+package String;
+
+public class Program8 {
+	public static void main(String[] args) {
+	
+		System.out.println("a".matches("[abc]"));
+		System.out.println("b".matches("[abc]"));
+		System.out.println("c".matches("[abc]"));
+
+		System.out.println("d".matches("[abc]"));
+		
+	}
+}

@@ -1,0 +1,13 @@
+package String.Basics;
+
+public class Program13 {
+	public static void main(String [] args) {
+		
+		String s= "@!#%^&";
+		System.out.println(s.matches("[^a-zA-Z0-9]+"));
+		
+		
+		
+		
+	}
+}

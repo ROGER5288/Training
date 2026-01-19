@@ -1,0 +1,26 @@
+package Relation.Association;
+
+public class Test {
+	public static void main(String[] args) {
+			
+		Car c=new Car();
+		c.setBrand("A");
+		c.setPrice(2000000);
+		
+		Engine e=c.getEngine();
+		
+		System.out.println("Brand: " + c.getBrand());
+		System.out.println("Price: " + c.getPrice());
+		
+		System.out.println(e);
+	
+		Tire[] t = c.getTire();
+		for(int i = 0;i<t.length;i++) {
+			t[i].setType("Tubeless");
+			t[i].setAp(32);
+			
+			System.out.println("Tire " + (i+1)+ "Type: " + t[i].getType() + " Air Pressure : " + t[i].getAp());
+		}
+		
+	}
+}

@@ -1,0 +1,18 @@
+package User_Input;
+
+import java.util.Scanner;
+public class Program1 {
+	public static void main(String[] args) {
+		
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the data 1");
+		byte b=scan.nextByte();
+		System.out.println("Enter the data 2");
+		int i=scan.nextInt();
+		System.out.println(b+i);
+		System.out.println("Enter the data 3");
+		double d=scan.nextDouble();
+		System.out.println(b+i+d);
+		
+	}
+}

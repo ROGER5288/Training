@@ -1,0 +1,30 @@
+package OOP.Fundamentals.Non_StaticInitializer;
+
+public class Test {
+	public static void main(String[] args) {
+		
+		Person person1 = new Person();
+		person1.initialize("A",20,"Male");
+		
+//		person1.name = "A";
+//		person1.age = 20;
+//		person1.gender = "Male";
+		
+		person1.display();
+//		System.out.println(person1.name);
+//		System.out.println(person1.age);
+//		System.out.println(person1.gender);
+		
+		
+		Person person2= new Person();
+		person2.initialize("B", 21, "Female");
+//		person2.name = "B";
+//		person2.age = 21;
+//		person2.gender = "Female";
+		person2.display();
+		
+//		System.out.println(person2.name);
+//		System.out.println(person2.age);
+//		System.out.println(person2.gender);
+	}
+}

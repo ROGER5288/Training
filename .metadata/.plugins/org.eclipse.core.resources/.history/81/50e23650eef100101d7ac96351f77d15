@@ -1,0 +1,16 @@
+package String;
+
+public class Program11 {
+	public static void main(String[] args) {
+		
+		String s = "java!w#qse(";
+		
+		s.split("!");
+		
+		s.split("[!#(]");
+		
+		
+		
+		
+	}
+}

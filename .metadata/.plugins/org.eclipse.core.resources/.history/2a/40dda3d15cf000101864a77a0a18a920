@@ -1,0 +1,10 @@
+package OOP.Fundamentals;
+
+public class Demo {
+	//every class name is a non-premitive data type
+	//NPDT
+	//member of class
+	public static void main(String[] args) {
+		
+	}
+}

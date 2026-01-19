@@ -1,0 +1,19 @@
+package Relation.Association;
+
+public class Tire {
+	private String type;
+	private String ap;
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getAp() {
+		return ap;
+	}
+	public void setAp(String ap) {
+		this.ap = ap;
+	}
+	
+}

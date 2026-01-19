@@ -1,0 +1,42 @@
+package Association.Aggregation;
+
+public class Person {
+
+	private String name;//null
+	private String age;//null
+	private String gender;//null
+	
+	private Passport passport;//null
+	
+	public void applyPassport(String string, String string2, String string3) {
+		passport=new Passport();
+	}
+	public String getName() {
+		return name;
+	}
+	
+	public String getAge() {
+		return age;
+	}
+	
+	public String getGender() {
+		return gender;
+	}
+	
+	public Passport getPassport() {
+		return passport;
+	}
+	
+	public void setName(String name) {
+		this.name=name;
+	}
+	
+	public void setAge(String age) {
+		this.age=age;
+	}
+	
+	public void setGender(String gender) {
+		this.gender=gender;
+	}
+	
+}

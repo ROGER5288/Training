@@ -1,0 +1,16 @@
+package Methods;
+
+public class Program8 {
+	public static void main(String[]args) {
+		num(35);
+	}
+	public static void num(int a) {
+		for(int i = 1; i<=a; i++) {
+			if(i*i==a+1) {
+				System.out.println("Sunny number " + a); 
+			}else {
+				System.out.println("Not Sunny Number " + a);
+			}
+		}
+	}
+}

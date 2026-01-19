@@ -1,0 +1,20 @@
+package Array.OneD_Array;
+
+public class Program1 {
+	static int[] i;
+	static int []j;
+	static int k[];
+	static String s[];
+	static Student student[];
+	public static void main(String[]args) {
+		/*
+		 * array reference variable:
+		 * int []i;
+		 * int[] i;
+		 * int i[];
+		 */
+		System.out.println(i);
+		System.out.println(j);
+		System.out.println(k);
+	}
+}

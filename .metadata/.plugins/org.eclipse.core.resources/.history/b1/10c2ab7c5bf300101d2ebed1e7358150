@@ -1,0 +1,19 @@
+package Relation.Association;
+
+public class Tire {
+	private String type;
+	private String hp;
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public String getHp() {
+		return hp;
+	}
+	public void setHp(String hp) {
+		this.hp = hp;
+	}
+	
+}

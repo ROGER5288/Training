@@ -1,0 +1,27 @@
+package OOP.Fundamentals.Non_Static_Initializer;
+
+public class Program1 {
+	static {
+		System.out.println("Static Block 1");
+	}
+	//non_static initializer
+	{
+		System.out.println("Static Block 3");
+	}
+	
+	// class will load 1st then object will load
+	public static void main(String[] args) {
+		System.out.println("Main");
+		new Program1();
+		new Program1();
+	} 
+	public int test() {
+		System.out.println("Test");
+		return 10;
+	}
+	int a=test();
+//	static {
+//		System.out.println("Static Block 2");
+//	}
+}
+// Static block, 

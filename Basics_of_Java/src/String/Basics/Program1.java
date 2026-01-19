@@ -1,0 +1,11 @@
+package String.Basics;
+
+public class Program1 {
+	public static void main(String[]args) {
+		String s = "Hello";
+		s = "Hi";
+		String s1 = "Hello";
+		System.out.println(s);
+		System.out.println(s1);
+	}
+}

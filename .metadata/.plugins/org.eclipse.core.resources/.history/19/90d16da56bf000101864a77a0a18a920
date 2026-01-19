@@ -1,0 +1,17 @@
+package OOP.Fundamentals.StaticInitializer;
+
+public class Program1 {
+	
+	static int i = test();
+
+	//Application ---> opening
+	public static void main(String[]args) {
+		System.out.println("Program1 main start");
+		System.out.println("Program1 main end");
+	}
+	public static int test() {
+		System.out.println("Test");
+		System.out.println(i);
+		return 10;
+	}
+}

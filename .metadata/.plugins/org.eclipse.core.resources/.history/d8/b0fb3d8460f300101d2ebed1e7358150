@@ -1,0 +1,53 @@
+package Relation.Association;
+
+public class Car {
+
+	//new Car()
+	private String brand;//null
+	private double price;//0.0
+	
+	
+	private Engine engine;//null
+	private Tire[] tire;
+	
+	Car(){
+		engine=new Engine();
+		tire = new Tire[4];
+		
+		for (int i = 0; i<tire.length; i++) {
+			tire[i] = new Tire();
+		}
+	}
+	
+	public String getBrand() {
+		return brand;
+	}
+	
+	public double getPrice() {
+		return price;
+	}
+	
+	public Engine getEngine() {
+		return engine;
+	}
+	public Tire[] getTire(){
+		return tire;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	public void setEngine(Engine engine) {
+		this.engine = engine;
+	}
+	public void setTire(Tire[] tire) {
+		this.tire = tire;
+	}
+	
+	
+}

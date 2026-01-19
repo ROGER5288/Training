@@ -1,0 +1,27 @@
+package String;
+
+public class Program8 {
+	public static void main(String[] args) {
+		
+		// to check if the string belongs between that range 
+		//for single character
+		
+		System.out.println("a".matches("[abc]"));
+		System.out.println("b".matches("[abc]"));
+		System.out.println("c".matches("[abc]"));
+
+		System.out.println("d".matches("[abc]"));
+		System.out.println("d".matches("^[abc]"));
+		System.out.println("m".matches("[a-z]"));
+		
+		
+		System.out.println("M".matches("[a-z]"));
+
+		System.out.println("M".matches("[A-Z]"));
+		
+		// For multiple characters
+		
+		System.out.println("abc".matches("[a-z]+"));
+
+	}
+}

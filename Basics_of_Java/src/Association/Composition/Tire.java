@@ -1,0 +1,19 @@
+package Association.Composition;
+
+public class Tire {
+	private String type;
+	private double ap;
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
+	}
+	public double getAp() {
+		return ap;
+	}
+	public double setAp(double ap) {
+		return this.ap = ap;
+	}
+	
+}

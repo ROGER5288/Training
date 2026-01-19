@@ -1,0 +1,12 @@
+package Relation.Association;
+
+public class Engine {
+	private String type;
+	private double price;
+	private String cc;
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,22 @@
+package Array.OneD_Array;
+
+public class Program2 {
+	public static void main(String[] args) {
+		
+		int[] a = {3,4,5};
+		System.out.println(a);
+		
+		double[] d = {4,2,1};
+		System.out.println(d);
+		
+		String[] s= {"A", "B"};
+		System.out.println(s);
+		
+		Student[] student = {new Student(0, 0), new Student(0, 0)};
+		System.out.println(student);
+		
+		Employee[] emp = {new Employee(0, null, 0), new Employee(0, null, 0)};
+		System.out.println(emp);
+		
+	}
+}

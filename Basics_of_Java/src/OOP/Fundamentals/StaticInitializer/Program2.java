@@ -1,0 +1,27 @@
+package OOP.Fundamentals.StaticInitializer;
+
+public class Program2 {
+	//initializers will be executed from top to bottom.
+	static int i = 20;//single line initializer
+	static {
+		i = 30;
+		System.out.println(i);
+		System.out.println("Static Initializer Block 1");
+		i = test1();
+	}
+	public static void main(String[]args) {
+		System.out.println("Main start");
+		System.out.println(i);
+		System.out.println("Main end");
+		
+	}
+	public static int test1() {
+		System.out.println("Test1");
+		System.out.println(i);
+		return 10;
+	}
+	static {
+		System.out.println("Static Initializer Block 2");
+	}
+	
+}
