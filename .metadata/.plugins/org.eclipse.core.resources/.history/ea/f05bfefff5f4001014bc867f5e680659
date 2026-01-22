@@ -1,0 +1,17 @@
+package OOP.Inheritance;
+
+public class Program1 {
+	static int a = 100;
+	public static void Program1(){
+		System.out.println("a");
+	}
+	
+	static {
+		System.out.println("A static block");
+		
+	}
+	
+	public static void main() {
+		System.out.println();
+	}
+}

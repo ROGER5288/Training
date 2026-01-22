@@ -1,0 +1,17 @@
+package Shadowing.Multilevel;
+
+public class B3 extends B2 {
+	int b = 30;
+	
+	public void display() {
+		System.out.println(b);
+		System.out.println(super.b);
+		System.out.println(((B1)this).b);
+	}
+	
+	public static void main(String[] args) {
+		
+		B3 b3 = new B3();
+		b3.display();
+	}
+}

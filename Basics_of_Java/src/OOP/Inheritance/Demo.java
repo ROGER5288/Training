@@ -1,0 +1,23 @@
+package OOP.Inheritance;
+
+
+public class Demo {
+
+	public Demo(double d) {
+		this();
+		System.out.println("Demo(double)");
+	}
+
+	public Demo() {
+		this(10);
+		System.out.println("Demo()");
+	}
+
+	public Demo(int a) {
+		System.out.println("Demo(int)");
+	}
+
+	public static void main(String[] args) {
+		Demo d = new Demo((int) 10.5);
+	}
+}

@@ -1,0 +1,18 @@
+package OOP.Abstraction.Interface;
+
+public class Program1 {
+
+}
+interface I2{
+	final static int a = 10;
+	public static void m() {
+		System.out.println("m()");
+		
+	}
+}
+class Demo implements I2{
+	public static void main(String[] args) {
+		I2.m();
+		
+	}
+}

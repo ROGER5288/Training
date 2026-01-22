@@ -1,0 +1,7 @@
+package Shadowing.Multilevel;
+
+public class C1 {
+    static void show() {
+        System.out.println("C1 show()");
+    }
+}

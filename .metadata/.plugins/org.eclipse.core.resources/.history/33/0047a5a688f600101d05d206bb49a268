@@ -1,0 +1,17 @@
+package OOP.Abstraction;
+
+public class Program1 {
+	
+	public static void main(String[] args) {
+
+        A a = new B();
+        a.testA();
+        a.test();
+
+        B b = (B) a;
+        b.testA();
+        b.test();
+        b.testB();
+    }
+}
+

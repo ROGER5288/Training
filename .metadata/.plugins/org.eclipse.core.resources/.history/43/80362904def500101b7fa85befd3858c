@@ -1,0 +1,14 @@
+package Object_Demo;
+
+public class Employee {
+	int id = 30;
+	String name = "Hari";
+	double sal = 50000.0;
+	public String toString() {
+		return (this.id+ " "+ this.name+ " "+this.sal);
+	}
+	public static void main(String[] args) {
+		Employee employee = new Employee();
+		System.out.println(employee);
+	}
+}

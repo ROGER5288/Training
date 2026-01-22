@@ -1,0 +1,17 @@
+package OOP.Abstraction;
+
+class OnlineCourse extends Course {
+
+    String platformName;
+
+    OnlineCourse(String name, String platformName) {
+        super(name);
+        this.platformName = platformName;
+    }
+
+    @Override
+    double coursePrice() {
+        System.out.println("Platform: " + platformName);
+        return 0; // base price
+    }
+}

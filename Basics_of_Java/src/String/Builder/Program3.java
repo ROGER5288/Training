@@ -1,42 +1,42 @@
-package String.Builder;
-
-public class Program3 {
-	public static void main(String[] args) {
-		//StringBuilder sb = new StringBuilder();
-		
-		StringBuffer sb = new StringBuffer();
-		
-		sb.append("abcd");
-		
-		System.out.println(sb.reverse());
-		sb.append("1234hello");
-		
-		System.out.println(sb);
-		sb.delete(3, 6);
-		System.out.println(sb);
-		sb.insert(2, "student");
-		System.out.println(sb);
-		
-	}
-}
-
-
-/*
- * Key Differences:
-Thread Safety:
-StringBuffer: Thread-safe (synchronized methods).
-StringBuilder: Not thread-safe (unsynchronized methods).
-Performance:
-StringBuffer: Slower due to synchronization overhead.
-StringBuilder: Faster, as it avoids synchronization, better for single-threaded tasks.
-Use Case:
-StringBuffer: Multi-threaded applications where shared string data needs protection.
-StringBuilder: Single-threaded applications, loops, and general string manipulation where speed is key (e.g., interview problems, competitive coding).
-Introduction:
-StringBuffer: Older (Java 1.0).
-StringBuilder: Newer (Java 1.5), offering better performance. 
-In Simple Terms:
-StringBuffer is like a locked box for strings in a busy office (multi-threaded), ensuring only one person touches it at a time.
-StringBuilder is like an unlocked box in a quiet cubicle (single-threaded), allowing quick, unrestricted changes. 
- */
-*/
+//package String.Builder;
+//
+//public class Program3 {
+//	public static void main(String[] args) {
+//		//StringBuilder sb = new StringBuilder();
+//		
+//		StringBuffer sb = new StringBuffer();
+//		
+//		sb.append("abcd");
+//		
+//		System.out.println(sb.reverse());
+//		sb.append("1234hello");
+//		
+//		System.out.println(sb);
+//		sb.delete(3, 6);
+//		System.out.println(sb);
+//		sb.insert(2, "student");
+//		System.out.println(sb);
+//		
+////	}
+//}
+//
+//
+///*
+// * Key Differences:
+//Thread Safety:
+//StringBuffer: Thread-safe (synchronized methods).
+//StringBuilder: Not thread-safe (unsynchronized methods).
+//Performance:
+//StringBuffer: Slower due to synchronization overhead.
+//StringBuilder: Faster, as it avoids synchronization, better for single-threaded tasks.
+//Use Case:
+//StringBuffer: Multi-threaded applications where shared string data needs protection.
+//StringBuilder: Single-threaded applications, loops, and general string manipulation where speed is key (e.g., interview problems, competitive coding).
+//Introduction:
+//StringBuffer: Older (Java 1.0).
+//StringBuilder: Newer (Java 1.5), offering better performance. 
+//In Simple Terms:
+//StringBuffer is like a locked box for strings in a busy office (multi-threaded), ensuring only one person touches it at a time.
+//StringBuilder is like an unlocked box in a quiet cubicle (single-threaded), allowing quick, unrestricted changes. 
+// */
+//*/

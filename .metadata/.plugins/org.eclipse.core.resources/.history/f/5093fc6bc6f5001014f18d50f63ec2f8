@@ -1,0 +1,51 @@
+package OOP.Polymorphism;
+import java.util.Scanner;
+public class MyAppAreaCalculator {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Choose One of the Options given");
+		System.out.println("1. Area of square");
+		System.out.println("2. Area of rectangel");
+		System.out.println("3. Area of circle");
+		System.out.println("4. Exit");
+		int choice = sc.nextInt();
+		
+		switch(choice){
+		case 1: {
+			System.out.println("Enter the value for one side of the square");
+			double side = sc.nextDouble();
+			sc.nextLine();
+			System.out.println("the area of the square is: " + AreaCalculator.calculate(side));
+			break;
+		}
+		case 2: {
+			System.out.println("Enter the value for one side of the rectangle");
+			double length = sc.nextDouble();
+			sc.nextLine();
+			System.out.println("Enter the value for other side of the square");
+			double width = sc.nextDouble();
+			sc.nextLine();
+			System.out.println("the area of the rectangle is: " + AreaCalculator.calculate(length,width));
+			break;
+		}
+
+		case 3: {
+			System.out.println("Enter the value for the radious of the circle");
+			float radious = sc.nextFloat();
+			sc.nextLine();
+			System.out.println("the area of the circle is: " + AreaCalculator.calculate(radious));
+			break;
+		}
+
+		case 4: {
+			System.out.println("Exit");
+
+			break;
+		}
+
+		}
+		
+		
+	}
+}

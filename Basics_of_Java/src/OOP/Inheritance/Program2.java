@@ -1,0 +1,15 @@
+//package OOP.Inheritance;
+//
+//public class Program2 extends Program1 {
+//	static int b =500;
+//	public static void Program2() {
+//		System.out.println(Program2());
+//		
+//	}
+//	static {
+//		System.out.println("B static block");
+//	}
+//	public static void main() {
+//		System.out.println("B main");
+//	}
+//}

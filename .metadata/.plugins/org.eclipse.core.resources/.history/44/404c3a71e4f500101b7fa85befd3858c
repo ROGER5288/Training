@@ -1,0 +1,10 @@
+package Object_Demo;
+
+public class CompareObject {
+	public static void main(String[] args) {
+		Employee e = new Employee(1, "Soumyojit", 98.00);
+		Student s = new Student(1, "Soumyojit", 98.00);
+
+		System.out.println(e.equals(s));
+	}
+}

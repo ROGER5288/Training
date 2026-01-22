@@ -1,0 +1,19 @@
+package OOP.Polymorphism;
+
+public class AreaCalculator {
+	public static void calculate() {
+		return;
+	}
+	public static double calculate(double side) {
+		double area =  (side*side);
+		return area;
+	}
+	public static double calculate(double length, double breadth) {
+		double area = (length * breadth );
+		return area;
+	}
+	public static double calculate(float radious) {
+		double area = (3.14*radious);
+		return  area;
+	}
+}

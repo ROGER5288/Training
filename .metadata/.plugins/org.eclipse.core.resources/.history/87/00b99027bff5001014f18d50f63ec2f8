@@ -1,0 +1,19 @@
+package Shadowing.Multilevel;
+
+public class C3 extends C2 {
+
+    static void show() {
+        System.out.println("C3 show()");
+    }
+
+    public void display() {
+        show();              // calls C3 show()
+        C2.show();           // calls C2 show()
+        C1.show();           // calls C1 show()
+    }
+
+    public static void main(String[] args) {
+        C3 obj = new C3();
+        obj.display();
+    }
+}

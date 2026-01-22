@@ -1,0 +1,27 @@
+package OOP.Inheritance;
+
+public class TestCasting {
+	public static void main(String[] args) {
+
+		//Upcasting (Implicit)
+		Animal a = new WhiteTiger();
+		a.sound();    // allowed
+		// a.hunt();  ❌ not accessible
+		// a.rare();  ❌ not accessible
+
+		System.out.println();
+
+		// Downcasting (Explicit)
+		Tiger t = (Tiger) a;
+		t.sound();   // inherited
+		t.hunt();    // allowed
+
+		System.out.println();
+
+		//Downcasting to child
+		WhiteTiger wt = (WhiteTiger) t;
+		wt.sound();
+		wt.hunt();
+		wt.rare();
+	}
+}

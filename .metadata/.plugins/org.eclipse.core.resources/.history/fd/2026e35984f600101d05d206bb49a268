@@ -1,0 +1,16 @@
+package OOP.Abstraction;
+
+public class B {
+
+}
+class B extends A {
+
+    @Override
+    public void test() {
+        System.out.println("B implementation");
+    }
+
+    public void testB() {
+        System.out.println("testB method");
+    }
+}

@@ -1,0 +1,24 @@
+package Object_Demo;
+
+public class Student {
+	int id;
+	String name;
+	double marks;
+
+	public Student(int id, String name, double marks) {
+		this.id = id;
+		this.name = name;
+		this.marks = marks;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		Employee em = (Employee) obj;
+		
+		if(em.id == this.id ) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+}

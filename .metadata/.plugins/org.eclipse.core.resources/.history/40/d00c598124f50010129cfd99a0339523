@@ -1,0 +1,73 @@
+package OOP.Inheritance;
+
+//public class TestCasting {
+//    public static void main(String[] args) {
+//
+//        // Normal object creation
+//        WhiteTiger wt = new WhiteTiger();
+//        wt.whiteColor();
+//        wt.roar();
+//        wt.walk();
+//
+//        System.out.println("-----------");
+//
+//        // Upcasting
+//        Tiger tiger = wt;   // WhiteTiger -> Tiger
+//        tiger.roar();
+//        tiger.walk();
+//        // tiger.whiteColor();  // Compile time error
+//
+//        System.out.println("-----------");
+//
+//        Animal animal = tiger;  // Tiger -> Animal
+//        animal.walk();
+//        // animal.roar();       // ❌Compile time error
+//        // animal.whiteColor(); // ❌ Compile time error
+//
+//        System.out.println("-----------");
+//
+//        // Downcasting (valid)
+//        Animal a = new WhiteTiger();
+//        WhiteTiger obj = (WhiteTiger) a;
+//        obj.walk();
+//        obj.roar();
+//        obj.whiteColor();
+//
+//        System.out.println("-----------");
+//
+//        // Downcasting (invalid – runtime error)
+//        Animal a1 = new Animal();
+//        // WhiteTiger wt2 = (WhiteTiger) a1; // ❌ ClassCastException
+//    }
+//}
+//
+
+
+
+
+public class Whitetiger extends Tiger{
+
+	public void Whitecolor() {
+		System.out.println("White in Colour");
+	}
+	public static void main(String[] args) {
+		Whitetiger wt=new Whitetiger();
+		wt.Whitecolor();
+		wt.roar();
+		wt.walk();
+		
+		Tiger tiger=wt;
+		
+		tiger.roar();
+		tiger.walk();
+		((Whitetiger)tiger).Whitecolor();
+		
+		Animal animal=wt;
+		
+		animal.walk();
+		((Tiger)animal).roar();
+		((Whitetiger)animal).Whitecolor();
+		
+	}
+	
+}

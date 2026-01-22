@@ -1,0 +1,42 @@
+package OOP.Inheritance;
+
+public class Employee {
+	int id;
+	String name;
+	double salary;
+
+	public Employee() {
+		System.out.println("Default constructor called");
+	}
+
+	public Employee(int id) {
+		this.id = id;
+		System.out.println("Constructor with id called: id = " + id);
+	}
+
+	public Employee(int id, String name) {
+		this(id); // constructor chaining
+		this.name = name;
+		System.out.println("Constructor with id & name called: name = " + name);
+	}
+
+	public Employee(int id, String name, double salary) {
+		this(id, name); // constructor chaining
+		this.salary = salary;
+		System.out.println("Constructor with id, name & salary called: salary = " + salary);
+	}
+
+	public static void main(String[] args) {
+		System.out.println("Creating e1");
+		Employee e1 = new Employee();
+
+		System.out.println("\nCreating e2");
+		Employee e2 = new Employee(101);
+
+		System.out.println("\nCreating e3");
+		Employee e3 = new Employee(102, "Ravi");
+
+		System.out.println("\nCreating e4");
+		Employee e4 = new Employee(103, "Rohon", 50000);
+	}
+}

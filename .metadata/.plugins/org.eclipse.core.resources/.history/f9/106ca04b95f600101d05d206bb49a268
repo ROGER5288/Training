@@ -1,0 +1,16 @@
+package OOP.Abstraction;
+
+class OnlinePaidCourse extends OnlineCourse {
+
+    double courseFee;
+
+    OnlinePaidCourse(String name, String platformName, double courseFee) {
+        super(name, platformName);
+        this.courseFee = courseFee;
+    }
+
+    @Override
+    double coursePrice() {
+        return courseFee;
+    }
+}
