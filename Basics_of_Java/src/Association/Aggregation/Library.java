@@ -9,8 +9,20 @@ public class Library {
 	private Book[] book;
 	
 	
-	public Book[] addBook(int size) {
-		return new Book[size];
+	private int index = 0; // to track added books
+
+	// create book array
+	public Book[] addBookArray(int size) {
+		return book = new Book[size];
+	}
+
+	// add single book into array
+	public void addBook(String id, String title, String author, String price) {
+		if (index < book.length) {
+			book[index++] = new Book(id, title, author, price);
+		} else {
+			System.out.println("Library is full, cannot add more books");
+		}
 	}
 
 	public String getName() {
@@ -56,9 +68,17 @@ public class Library {
 	public String getLibraryDetials() {
 		return "Name "+name+" Location "+location+" Address "+address+" Pincode : "+pincode; 
 	}
+
+	public Book[] addBook(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Book[] addBook1(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
-
-
 
 
 

@@ -21,7 +21,7 @@ public class User1 {
 		System.out.println("===================================================");
 		
 		for(int i=0;i<book.length;i++) {
-			System.out.println(book[i].getDetials());
+			System.out.println(book[i].getDetails());
 		}
 	}
 }

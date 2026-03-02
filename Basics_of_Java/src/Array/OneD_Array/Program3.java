@@ -5,6 +5,8 @@ public class Program3 {
 		
 		//int []a= {30,40,50};
 		Object[] a= {30,40,50,60.4,"Hello",new Student(0, 0), null};
-		
+		for(Object i : a) {
+			System.out.println(i);
+		}
 	}
 }

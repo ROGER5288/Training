@@ -54,7 +54,7 @@ public class Book {
 		this.price = price;
 	}
 	
-	public String getDetials() {
+	public String getDetails() {
 		return "Book Id : "+bookId+" Title : "+title+" Author : "+author+" Price : "+price;
 	}
 }
