@@ -1,0 +1,69 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+    <persistence-unit name="taskPu">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>org.example.Employee</class>
+        <class>org.example.Department</class>
+        <class>org.example.Salary</class>
+        <properties>
+            <!-- Database -->
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa_demo"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="@Aa528804"/>
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+
+            <!-- Hibernate -->
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
+
+<!-- persistence.xml > Unit >
+EntityManagerFactory > EntityManager > Database -->
+
+<!-- update / create /validate / none -->
+<!-- 1. read persistence.xml -->
+<!-- Load provider -->
+<!-- connect to database -->
+<!-- register entities -->
+<!-- prepare metadata -->
+<!-- create persistence context factory -->
+
+<!-- Entity: Student
+table: students
+id - bigint - pk - auto increment
+name - varchar - not null
+age - integer -->
+
+
+<!-- Create Persistence Context Factory
+Student s = em.find(Student.class, 1L);
+-->
+
+
+<!-- Entity Manager Interface
+java code > Entity Manager > Hibernate > Database -->
+
+
+<!-- 5 main methods of Entity Manager
+persist() - insert
+find() - select
+merge() - update
+remove() - delete
+createQuery() - JPQL query
+-->
+
+<!-- flush() - synchronize persistence context with database
+clear() - clear persistence context
+detach() - detach entity from persistence context
+close() - close Entity Manager
+-->
+
+<!-- Container vs Application Managed Entity Manager -->
+<!-- Feature	            Container Managed	Application Managed
+Who creates EM?                 	Container	Developer
+Who manages transactions?       	Container	Developer
+Need @Transactional?	                  Yes	No
+                    Used in	Spring/Jakarta EE   Java SE
+                            Complexity	Simple	More control, more code -->
